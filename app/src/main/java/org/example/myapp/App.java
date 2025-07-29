@@ -20,5 +20,6 @@ public class App {
   public static void main(String[] args) {
     Utils.printMessage("hello, world");
     String message = Joiner.on(", ").join("hello", "world");
+    System.out.println(message);
   }
 }
