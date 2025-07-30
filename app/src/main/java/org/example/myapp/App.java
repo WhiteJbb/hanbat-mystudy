@@ -1,7 +1,6 @@
 package org.example.myapp;
 
-import com.google.common.base.Joiner;
-import org.example.util.Utils;
+import java.util.Scanner;
 
 /**
  * 이 클래스는 한밭대학교 특강 실습 예제를 위한 첫 번째 클래스입니다. <br>
@@ -18,8 +17,29 @@ public class App {
    * @see <a href="https://docs.oracle.com/en/java/javase/21/">JDK Documentation</a>
    */
   public static void main(String[] args) {
-    Utils.printMessage("hello, world");
-    String message = Joiner.on(", ").join("hello", "world");
-    System.out.println(message);
+    //    String result = String.join(",", "aaa", "bbb", "ccc");
+    //    System.out.println(result);
+    //
+    //    int r = Math.abs(-100);
+    //    System.out.println(r);
+    //
+    //    String str = "abcdefghijk";
+    //    System.out.println(str.substring(2, 6));
+    //
+    //    int[] arr1 = new int[] {100, 200, 300, 400, 500};
+    //    int[] arr2 = Arrays.copyOf(arr1, 2);
+    //    for (int v : arr2) {
+    //      System.out.print(v + ",");
+    //    }
+    //    System.out.println();
+    //
+    //    ArrayList list1 = new ArrayList();
+    //    list1.add(100);
+
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("이름? ");
+    String name = scanner.nextLine();
+    System.out.printf("안녕하세요 %s 님! \n", name);
+    scanner.close();
   }
 }
